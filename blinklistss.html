@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="blinklist.html" type="text/css" href="stylesheets.css">
+    <!-- Title Tag used to declear the document title -->
+    <title>BLINKIST</title>
+    <!-- Style Tag (It will alaways be included in the head tag do not include it anywhere else)-->
+
+    <script>
+     alert("Welcome to blinkist")   
+    
+        var task = ["take out garbage","read a book","write javascript","go to work","sleep"];
+        var progress = ["done","in progress","to do"];
+        
+        task[task.length] = "Wacth TV";
+        
+        console.log(task[(task.length-1)]);
+        console.log(task);
+        
+        
+        /*
+        var question1 = prompt("which task 1-"+task.length+"?");
+        var question2 = prompt("status 1 = done 2 = in progress 3 = to do?");
+        
+        console.log("today you will " + task[(question1-1)] + " status of task = " + progress[(question2-1)]);
+        */
+        var animals = ["cat","dog","rabbit","bird","fish"];
+        var randomIndex = Math.floor(Math.random()*animals.length);
+        var randomAnimal = animals[randomIndex];
+        var message = prompt("which index value is "+randomAnimal );
+        var response = (message == randomIndex) ? "Correct" : "Wrong it was " +  randomIndex;
+        alert(response);
+        
+    
+        /*
+        var animals = ["cat","dog","rabbit","bird","fish","zebra"];
+        animals.push("sheep"); // add item at the end of an array
+        var remove1 = animals.pop(); // remove last item from the end of an array
+        
+        animals.shift(); //remove first item
+        animals.unshift("horse");//add first item to array
+        
+        animals.splice(2,1); // remove from pos number of items
+        */
+        
+        var animals = ["cat","dog","rabbit","bird","fish","zebra"];
+        var startVal = animals.length;
+        console.log(startVal);
+        animals[20] = "horse";
+        animals.fill("mouse",startVal , (animals.length-1));
+        
+        
+        //animals.sort(); // sort items by value
+        //animals.reverse(); // reverse the order of items
+        //animals.sort().reverse();
+        
+        
+        
+        console.log(animals);
+        
+        var newHolder = ["cat","dog","rabbit","bird"];
+        newHolder[10] = "Horse";
+        newHolder.fill("fish",3,10);
+        newHolder.reverse();
+        newHolder.pop();
+        newHolder.push("sheep");
+        
+        console.log(newHolder);
+    //["Horse", "fish", "fish", "fish", "fish", "fish", "fish", "fish", "rabbit", "dog", "sheep"]
+
+        
+    </script>  
+      
+      
+      
+      
+      <style>
+        body{
+            background-image:white;
+        }
+        
+        h1{
+            text-decoration: underline;
+            font-size: 150%;
+            color: black;
+            text-align: center; 
+            font-style:Verdana;
+        }
+
+        p1{ 
+            font-size: 20px;
+            color: black;
+        }
+
+        h2{
+            text-decoration: underline;
+            font-size: 150%;
+            color: black;
+            font-style: italic;
+        }
+
+        h3{
+            text-decoration:underline;
+            font-size: 150%;
+            color:black;
+            font-style:italic ;
+        }
+
+        p.paragraph{
+            color:black;
+            font-size: 15px;
+            line-height: 1.5em;
+            background-color: white;
+            padding:20px;
+            border-color:#666;
+            border-width: 2px;
+            border-style: solid;
+            margin:20px ;
+            margin-top: 60px;
+            border-radius: 10px;
+        }
+        
+        p.para{
+            color:black;
+            font-size: 15px;
+            line-height: 1.5em;
+            background-color: white;
+            padding:20px;
+            border-color:#666;
+            border-width: 2px;
+            border-style: solid;
+            margin:20px ;
+            margin-top:60px;
+            border-radius: 10px;
+        } 
+
+        p.para1{
+            color:black;
+            font-size: 15px;
+            line-height: 1.5em;
+            background-color: white;
+            padding:20px;
+            border-color:#666;
+            border-width: 2px;
+            border-style: solid;
+            margin:20px ;
+            margin-top:60px;
+            border-radius: 10px;
+        } 
+
+        p.para2{
+            color:black;
+            font-size: 15px;
+            line-height: 1.5em;
+            background-color: white;
+            padding:20px;
+            border-color:#666;
+            border-width: 2px;
+            border-style: solid;
+            margin:20px ;
+            margin-top:60px;
+            border-radius: 10px;
+        }
+                p.para3{
+            color:black;
+            font-size: 15px;
+            line-height: 1.5em;
+            background-color: white;
+            padding:20px;
+            border-color:#666;
+            border-width: 2px;
+            border-style: solid;
+            margin:20px ;
+            margin-top:60px;
+            border-radius: 10px;
+        }
+            p.para4{
+            color:black;
+            font-size: 15px;
+            line-height: 1.5em;
+            background-color: white;
+            padding:20px;
+            border-color:#666;
+            border-width: 2px;
+            border-style: solid;
+            margin:20px ;
+            margin-top:60px;
+            border-radius: 10px;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <!-- H1 Tag -->
+    <h1>MORE KNOWLEDGE IN LESS TIME</h1>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p1>
+        Perfect for curious people who love to learn,people who dont have time to read,and even people who aren't into reading
+    </p>
+
+    <!-- Image Tag <img /> -->
+    <img class="image"src="Blinklist.jpg"width="400"height="200">
+
+    <!-- H2 Tag -->
+    <h2>What is Blinkist?</h2>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p2>
+        Blinkist is a premium book summary service helping you digest the key insights of books in 15 minutes.Its main features are the simplistic bliknlist readers,which makes reading summaries easy,audio versions for most of their summaries,and highlighting and sharing what you learn.
+        We use real writers to craftmour blinks and neither people nor blinks are infallible.
+    </p>
+    
+    <!-- H3 Tag -->
+    <h3> History of Blinkist</h3>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p>
+        Founded in 2012,the Blinkist app was created by Holger Seim,Niklas Jansen,and Tobi Balling out of love for reading.Since then,it has been named by both Apple and Google as one of the best apps in the world, made countless headlines in The New York Times,The Guardian,amd TechCrunch, and praised by the likes of Tim Cook(Apple's CEO)for its noble mission
+    </p> 
+    
+    <!-- Image Tag <img /> -->
+    <img class="image"src="blinkist-app.jpg"width="400"hkeight="200">
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p class="paragraph">
+        Blinklist has helped me read more period.I love that I can get the key learnings from 10+ books a week and immediately implement them in my owm life".
+        <!-- A break tag (creates a new line space for the next tag) -->
+        <br />
+        -Hitha Palepu, entrepreneur and author.
+    </p>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p>
+        The Blinkist app collects key insights from over 5000+ of the world's best nonfiction books into snappy 15 minutes reads and listens.After successfully securing $35million in funding and quickly acquiring over 21million users,Blinkist is one of Europe's most exciting companies
+    </p>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p class="para">
+        Blinkist encourages you to read more nonfiction books.The app contains clevery written digests called Blinks where books are broken down into their main arguments".
+        <!-- A break tag (creates a new line space for the next tag) -->
+        <br />
+        -The New Yorks Times
+    </p>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p>
+        The app was born when 4 university friends wanted to read more,but could never fint the time.They wondered how they could read more books,but in a shorter amount of time.While they are studying,they used to write notes for their textbooks,which provided huge value when they were typing to remember all the books they had read.They decided to put all the notes into an app,to have access to them anytime,anywhere.Then,Blinkist was born,and today their app is used by millions of people all over the world to access thousands of amazing books and discover new great authors.
+    </p>
+
+    <!-- H4 Tag -->
+    <h4>Here's why so many people are talking about Blinkist:</h4>
+
+    <!-- H5 Tag -->
+    <h5>
+        <!-- Ordered List -->
+        <ol>
+            <!-- List -->
+            <li>ONE OF THE BEST APPS IN THE WORLD</li>
+        </ol>
+    </h5>
+
+    <!-- Image Tag <img /> -->
+    <img class="image"src="default-large.jpg"width="400"height="200">
+
+    <!-- A break tag (creates a new line space for the next tag) -->
+    <br />
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p>
+        The sleek and simple design makes it easy to learn from some of the world's best books in minutes-whether that's through listening or reading
+    </p>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p class="para1">
+        Blinkist is one of the world's best app".
+
+        <!-- A break tag (creates a new line space for the next tag) -->
+        <br>
+        -Apple
+    </p>
+    
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p>
+        Blinkist has won numerous major awards from Apple,Google,andthe United Nations.Notably,the app was acknowleged for its contributions to Global Education and learning by the UN.
+    </p>
+
+    <!-- Paragraph Tag called <p></p> tag -->
+    <p class="para2">
+        "With Blinkist you can boost your knowledge and gain neo perspectives so that you can be a better professional, a better patner,a better you."
+
+        <!-- A break tag (creates a new line space for the next tag) -->
+        <br>
+        -The United Nation
+    </p>
+     <h6>     2.    A BOOK EXPLAINED IN 15 MINUTES </h6>
+ <img class="image"src="Blinkist image.jpg"width="400 "height="300">
+<br>
+ <p8>It takes the average person 10hours to read a book which is a lot of time many of us don't have.It's difficult to find time to read widely recommended classice like "The 7 Habits ofnHighly Successful People or the latest bestsellers liking Thinking Fast and slow, or Stephen Hawking's.A brief history of time.</p8>
+<br>
+<br>
+<br>
+     With blinkist, its now possible to gain an understanding of 'must read'titles in 15 minutes.The busiest people including top CEOs,full time moms,and leading intellectuals turn to Blinkist to fit reading into their heotic days and keep-up-to date with the latest titles.
+         <p class="para3">
+             "I use Blinkist when I'm in between meetings and can't get a giant task done,but at least I can be productive".
+             <br>
+             -Sarah Schupp,Professor & Founder of University Parent.com
+             </p>
+    <h7>3. It’s Backed by Science At Blinkist</h7>
+    <img class="image"src="Inventors.jpg"width="400 "height="300">
+<br>
+      <p9> There’s a dedicated team of experts who sift through the millions of books published each year to find the best ones out there. Blinkist doesn’t just have bestsellers, but also the hidden gems, the timeless classics, books written for intellectuals, by intellectuals –– because Blinkist has built an app with serious purpose and intention. </p9>
+      
+ <p class="para4">  "When we started most apps were for social media or gaming. We wanted to do something different and build an app that would add genuine value to someone’s life". 
+ <br>
+ – Holger Seim, Blinkist co-founder</p>
+ <p10>Once the books are selected, the specialist editors identify the key ideas and themes from each book, and turn them into useful summaries of insights. The best part, all of the content is created using neuroscientific principles making all the information easy to understand, but hard to forget.</p10>
+ <br>
+ <br>
+ <p11>Actionable examples, case studies, and anecdotes help deliver information that’s relevant, useful, and applicable to a person’s life. Plus, Blinkist is tailored: as soon as people start reading, the app will start to recommend new titles that they’ll love, based on their unique interests and individual preferences</p11>
+<br>
+<br>
+     <h8>4. It’s Built by the Smartest People in Europe</h8>
+       <img class="image"src="Blinkist girl.jpg"width="400 "height="300">
+       <br>
+       <br>
+       <p12>Blinkist does not rely on algorithms to create the book explainers, it relies on people. The Blinkist team read, edit and record each pack of insights in house. It’s a team of experts, specialists with PhDs and diplomas, people who are hungry, eager, and passionate for understanding and sharing knowledge.
+</p12>
+<br>
+<br>
+<p13>To ensure the app, and the content, is the best it can be — Blinkist has built a team of over 200 qualified people who want to make powerful information available to millions.
+</p13>
+<br>
+<br>
+     <h9>5. Learning On The Go</h9>
+      <img class="image"src="Girl.jpg"width="400 "height="300">
+       <br>
+       <br>
+       <p14>The app really took off when the audio feature was introduced. It made it possible to listen to every title in the app, so that learning could take place whilst commuting, working out or cooking.</p14>
+       <br>
+       <br>
+       <p15>It made the app accessible to many more people, it meant that learning never had to take a back seat – and most importantly it allowed even more people to fit reading into their life.</p15>
+       <br>
+       <br>
+       <p16>Today, listening to Blinkist is the most popular way to consume all of the actionable insights. Which is no surprise, as over 30% of people learn and retain information better when it’s heard as opposed to read.
+</p16>
+<br>
+<br>
+<br>
+ <a href="https://www.blinklist.com">Blinklist</a>For more information click on this link.
+     </body>
+</html>
